@@ -1,0 +1,115 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+  /* .fade-leave-active below version 2.1.8 */
+{
+  opacity: 0;
+}
+
+.el-input, .el-select, .el-cascader, .el-input-number, .treeselect {
+  width: 100% !important;
+}
+
+.el-table--scrollable-x .el-table__body-wrapper {
+  z-index: 1;
+}
+
+//.CModal {
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  margin: 0 !important;
+//  transform: translate(-50%, -50%);
+//  max-height: calc(100% - 30px);
+//  max-width: calc(100% - 30px);
+//  display: flex;
+//  flex-direction: column;
+//  //> . CModal__body;
+//  overflow: auto;
+//}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+@media screen and (max-width: 480px) {
+  .CModal__wrapper .CModal {
+    width: 100% !important;
+  }
+  .CModal__wrapper .CModal .CModal__body {
+    overflow: auto
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .el-message-box {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .el-message {
+    min-width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .el-upload-dragger {
+    width: 300px !important;
+  }
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 8px; /*滚动条宽度*/
+  height: 10px; /*滚动条高度*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  //-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px; /*滚动条的背景区域的圆角*/
+  background-color: rgba(255, 255, 255, 0.7); /*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  /*滚动条的背景色*/
+  background-color: rgba(144, 147, 153, .3);
+  border-radius: 35px;
+  position: relative;
+}
+
+.el-table .invalid-row {
+  background: #fde2e2;
+}
+
+.el-table .trial-row {
+  background: #f0f9eb;
+}
+
+.el-table .system-row {
+  background: oldlace;
+}
+
+//@font-face {
+//  font-family: "Source Han Sans CN Regular";
+//  src: url("@static/font/hanSans/Source Han Sans CN Regular.woff2") format("woff2"),
+//  url("././static/font/hanSans/Source Han Sans CN Regular.woff") format("woff"),
+//  url("././static/font/hanSans/Source Han Sans CN Regular.ttf") format("truetype"),
+//  url("././static/font/hanSans/Source Han Sans CN Regular.eot") format("embedded-opentype"),
+//  url("././static/font/hanSans/Source Han Sans CN Regular.svg") format("svg");
+//}
+//
+//* {
+//  font-family: "Source Han Sans CN Regular", "inherit", "open sans", "Helvetica Neue", "黑体", Helvetica, Arial;
+//}

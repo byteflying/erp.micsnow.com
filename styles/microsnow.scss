@@ -1,0 +1,11 @@
+.ms-inline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 100px;
+  width: 200px;
+}
+
+td {
+  vertical-align: middle !important;
+}
